@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(to bottom right, azure, slategrey);
+    font-family: 'VT323', monospace;
+    margin:auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: black;
+}
+
+ h2 {
+    font-family: 'VT323', monospace;
+}
+
+img {
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+a:hover{
+  color:black;
+  background-color: white;
+}
+
+footer{
+  background-color: gainsboro;
+  width:100%;
+  height:100px;
+  float:right;
+  padding-top:50px
+}
+canvas{
+  position: absolute;
+}
+#starfield{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to bottom, #2b1960  0%, #3582a5 100%);
+}
+#twinkles{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.canvasdiv {
+  position: relative;
+  width:100%;
+  height:600px;
+}
+.seperator {
+  float:left;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+
+.nav-buttons {
+
+  margin:auto;
+  padding-bottom: 36px;
+  width:400px;
+  top:0px;
+  background-color: black;
+}
+
+.resumebutt {
+  display: inline-block;
+  float: right;
+  background-color: black;
+
+}
+
+.contactbutt {
+  float: left;
+  background-color: black;
+}
+
+.playbutt{
+  margin
+  float:right;
+  background-color: black;
+}
+
+.container0 {
+  height:640px;
+  float: inherit;
+}
+
+.container1 {
+  background-color: whitesmoke;
+  height: 355px;
+  float:left;
+  overflow: hidden;
+}
+.container2 {
+  background-color: whitesmoke;
+  height: 300px;
+  float:left;
+  overflow: hidden;
+}
+
+.title{
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+.title2{
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+.row1 {
+    width:100%;
+}
+.column {
+  float: left;
+  height: 513px;
+  overflow: hidden;
+}
+.column.left {
+  width: 75%;
+  background-color: silver;
+}
+
+.column.right {
+  width:25%;
+  background-color: CADETBLUE;
+
+}
+
+.descrtext{
+  height:195px;
+}
