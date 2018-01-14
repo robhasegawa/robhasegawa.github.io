@@ -1,4 +1,6 @@
-const context = canvas.getContext("2d");
+const tcanvas =document.getElementById("twinkles");
+
+const context = tcanvas.getContext("2d");
 // function calls a callback count times. Saves typing out for loops all the time
 const doFor = (count, callback) => {
   var i = 0;
@@ -70,16 +72,16 @@ var skyGrad;
 // render the twinkles
 function mainLoop(time) {
   // resize canva if page size changes
-  if (canvas.width !== innerWidth || canvas.height !== innerHeight) {
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
+  if (tcanvas.width !== innerWidth || tcanvas.height !== innerHeight) {
+    tcanvas.width = innerWidth;
+    tcanvas.height = innerHeight;
     // create a new set of twinkles
     twinkles.length = 0;
-    // density is number of pixels one the canvas that has one star
-    starCount = Math.floor((canvas.width * canvas.height) / density);
+    // density is number of pixels one the tcanvas that has one star
+    starCount = Math.floor((tcanvas.width * tcanvas.height) / density);
     // create the random twinkles;
-    doFor(starCount, () => createStar(point(randI(canvas.width), randI(canvas.height))));
-    skyGrad = context.createLinearGradient(0,0,0,canvas.height);
+    doFor(starCount, () => createStar(point(randI(tcanvas.width), randI(tcanvas.height))));
+    skyGrad = context.createLinearGradient(0,0,0,tcanvas.height);
     skyGrad.addColorStop(0,"black");
     doFor(100,(i)=>{
         var pos  = clamp(i/100,0,1);
@@ -97,8 +99,8 @@ function mainLoop(time) {
      skyGrad.addColorStop(1,"rgb("+skyColour[0]+","+skyColour[1]+","+skyColour[2]+")");
 
   }
-  context.fillStyle = skyGrad;
-  context.fillRect(0, 0, canvas.width, canvas.height);
+//  context.fillStyle = skyGrad;
+//  context.fillRect(0, 0, tcanvas.width, tcanvas.height);
   doFor(starCount, (i) => twinkles[i].draw());
 
   requestAnimationFrame(mainLoop);
