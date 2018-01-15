@@ -1,33 +1,33 @@
-const tcanvas =document.getElementById("twinkles");
-const context = tcanvas.getContext("2d");
+var tcanvas =document.getElementById("twinkles");
+var context = tcanvas.getContext("2d");
 // function calls a callback count times. Saves typing out for loops all the time
-const doFor = (count, callback) => {
+var doFor = (count, callback) => {
   var i = 0;
   while (i < count) {
     callback(i++)
   }
 };
 // creates a random integer between min and max. If min only given the between 0 and the value
-const randI = (min, max = min + (min = 0)) => (Math.random() * (max - min) + min) | 0;
+var randI = (min, max = min + (min = 0)) => (Math.random() * (max - min) + min) | 0;
 // same as above but as floats.
-const rand = (min, max = min + (min = 0)) => Math.random() * (max - min) + min;
+var rand = (min, max = min + (min = 0)) => Math.random() * (max - min) + min;
 // creates a 2d point at x,y. If only x is a point than set to that point
-const point = (x = 0, y) => {
+var point = (x = 0, y) => {
   if (x.x && y === undefined) {return { x: x.x,y: x.y} }
   return {x,y: y === undefined ? 0 : y }
 };
 function ease (time, amount = 2) { return Math.pow(time % 1,amount) };
-const clamp = (v, min = 1,max = min + (min = 0)) => v < min ? min : v > max ? max : v;
+var clamp = (v, min = 1,max = min + (min = 0)) => v < min ? min : v > max ? max : v;
 
 
 
 
 // stuff for twinkles
-const skyColour = [10,30,50];
-const density = 1000; // number of star per every density pixels
-const colourChangeRate = 32; // Time in frames to change a colour
-const twinkles = [];
-const star = { // define a star
+var skyColour = [10,30,50];
+var density = 1000; // number of star per every density pixels
+var colourChangeRate = 32; // Time in frames to change a colour
+var twinkles = [];
+var star = { // define a star
   draw() {
     this.count += 1; // integer counter used to triger color change every 16 frames
     if (this.count % colourChangeRate === 0) { // change colour ?
@@ -72,7 +72,10 @@ function createStar(pos) {
 
 var starCount;
 var skyGrad;
-
+var requestAnimationFrame = window.requestAnimationFrame ||
+                            window.mozRequestAnimationFrame ||
+                            window.webkitRequestAnimationFrame ||
+                            window.msRequestAnimationFrame;
 // render the twinkles
 function mainLoop(time) {
   // resize canva if page size changes
