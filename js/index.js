@@ -21,7 +21,7 @@ function create_stars(){
     this.x = getRandomInt( 0, w );
     this.y = getRandomInt( 0, h );
 
-    this.size = getRandomInt(.5,1);
+    this.size = getRandomInt(.1,.1);
 
     this.hue = getRandomInt( 0, 360 );
     this.opacity = getRandomInt( 0, 70 );

@@ -1,5 +1,4 @@
 const tcanvas =document.getElementById("twinkles");
-
 const context = tcanvas.getContext("2d");
 // function calls a callback count times. Saves typing out for loops all the time
 const doFor = (count, callback) => {
@@ -26,7 +25,7 @@ const clamp = (v, min = 1,max = min + (min = 0)) => v < min ? min : v > max ? ma
 // stuff for twinkles
 const skyColour = [10,30,50];
 const density = 1000; // number of star per every density pixels
-const colourChangeRate = 16; // Time in frames to change a colour
+const colourChangeRate = 32; // Time in frames to change a colour
 const twinkles = [];
 const star = { // define a star
   draw() {
@@ -34,21 +33,25 @@ const star = { // define a star
     if (this.count % colourChangeRate === 0) { // change colour ?
       // colour is a gaussian distrabution (NOT random) centered at #888
       var c = (Math.random() + Math.random() + Math.random() + Math.random()) * 4;
-      var str = "#";
-      str += Math.floor(c * this.red).toString(16); // change color
-      str += Math.floor(c * this.green).toString(16); // change color
-      str += Math.floor(c * this.blue).toString(16); // change color
-
+      var d = (rand(0,360));
+      var str = "hsl(";
+          str += Math.floor(d) * this.red;
+          str +=","
+          str += Math.floor(rand(0,20) * this.green);
+          str +="%,"
+          str += Math.floor(rand(50,100) * this.blue);
+          str +="%)"
 
       this.col = str;
     }
+
     context.fillStyle = this.col;
     // move star around  a pixel. Again its not random
     // but a gaussian distrabution. The movement is sub pixel and will only
     // make the twinkles brightness vary not look like its moving
     var ox = (Math.random() + Math.random() + Math.random() + Math.random()) / 4;
     var oy = (Math.random() + Math.random() + Math.random() + Math.random()) / 4;
-    context.fillRect(this.pos.x + ox, this.pos.y + oy, this.size, this.size);
+    context.fillRect(this.pos.x , this.pos.y , this.size, this.size);
   }
 }
 // create a random star
@@ -58,7 +61,8 @@ function createStar(pos) {
     pos,
     col: "#ccc",
     count: randI(colourChangeRate),
-    size: rand(1) * rand(1) * 2 + 0.5,
+    alpha: 1-(rand(1) * rand(1) *rand(1)),
+    size: rand(1) * rand(1) * 1 + 0.1,
     red: 1-(rand(1) * rand(1) *rand(1)),  // reduces colour channels
     green: 1-(rand(1) * rand(1) *rand(1)), // but only by a very small amount
     blue: 1-(rand(1) * rand(1) *rand(1)),  // most of the time but occasional
@@ -72,9 +76,9 @@ var skyGrad;
 // render the twinkles
 function mainLoop(time) {
   // resize canva if page size changes
-  if (tcanvas.width !== innerWidth || tcanvas.height !== innerHeight) {
-    tcanvas.width = innerWidth;
-    tcanvas.height = innerHeight;
+  if (tcanvas.width !== 400 || tcanvas.height !== 500) {
+    tcanvas.width = 400;
+    tcanvas.height = 500;
     // create a new set of twinkles
     twinkles.length = 0;
     // density is number of pixels one the tcanvas that has one star
