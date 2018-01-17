@@ -1,41 +1,21 @@
+
 var ufosCanvas = document.querySelector("#ufos");
-var ufosctx = ufosCanvas.getContext("2d");
+var ctxU = ufosCanvas.getContext("2d");
 ufosCanvas.width = 400;
 ufosCanvas.height = 500;
 
-var ufos =
-  x: 400,
-  y: 0,
-  xVel: getRandomInt(2,10),
-  size: 1;
-  
-int initialTime;
-int interval = 1000;//one second
+var ufos = [];
 
 function Ufo(){
   this.x = 400;
-  this.y = getRandomInt(0,500);
-  this.size = 1;
-  this.xVel = getRandomInt(2,10);
+  this.y = getRandomInt(0,400);
+  this.size = 10;
+  this.fill
 }
 
-function SetupUfo(){
-  var ufo = new Ufo();
-  ufos.push(ufo);
-  UfoTimer();
-}
-function UfoTimer(){
-  var ufoUP = ufos;
-  if (millis() - initialTime > interval)
-  {
-    time = nf(int(millis()/1000), 3);
-    initialTime = millis();
-    DrawUfo();
+function drawUfo(){
+  for (var i = 0; i <ufos.length; i++){
+    var u = ufos[i];
+    ctxU.fillRect()
   }
-}
-DrawUfo(){
-  for(var i=0; i<1; i++){
-
-  }
-}
 }

@@ -14,12 +14,19 @@ h1 {
     font-family: 'VT323', monospace;
 }
 
+p{
+  padding: 10px;
+  text-align: justify;
+}
+
 img {
+  float: left;
   display: block;
   margin: auto;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  max-height:100%;
   overflow: hidden;
 }
 
@@ -28,7 +35,7 @@ a{
     background-color: transparent;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 a:hover{
   color:black;
@@ -98,9 +105,12 @@ canvas{
 }
 
 .playbutt{
-  margin
+  margin: 0 auto;
+  width:100%;
+  height:20%;
   float:right;
   background-color: black;
+
 }
 
 .container0 {
@@ -110,15 +120,16 @@ canvas{
 
 .container1 {
   background-color: whitesmoke;
-  height: 355px;
+  height: 400px;
   float:left;
   overflow: hidden;
 }
 .container2 {
   background-color: whitesmoke;
-  height: 300px;
+  min-height: 200px;
   float:left;
   overflow: hidden;
+  width:100%;
 }
 
 .title{
@@ -133,23 +144,29 @@ canvas{
 }
 .row1 {
     width:100%;
+    height:400px;
+    overflow: hidden;
 }
 .column {
   float: left;
-  height: 513px;
+  min-height: 200px;
   overflow: hidden;
 }
 .column.left {
   width: 75%;
   background-color: silver;
+  overflow: hidden;
 }
 
 .column.right {
   width:25%;
   background-color: CADETBLUE;
+  height:400px;
 
 }
 
 .descrtext{
   height:195px;
+  margin-left: 5px
+  text-align: left;
 }
