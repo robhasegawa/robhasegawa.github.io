@@ -40,6 +40,7 @@ a{
     text-decoration: none;
     display: inline-block;
     padding: 5px;
+    height:100%;
 }
 a:hover{
   color:black;
@@ -56,6 +57,7 @@ footer{
 canvas{
   position: absolute;
 }
+
 #starfield{
   left: 0;
   right: 0;
@@ -90,7 +92,7 @@ canvas{
 .nav-buttons {
 
   margin:auto;
-  padding-bottom: 36px;
+  height: 30px;
   width:400px;
   top:0px;
   background-color: black;
@@ -100,6 +102,7 @@ canvas{
   display: inline-block;
   float: right;
   background-color: black;
+  height:100%;
 
 }
 
@@ -110,12 +113,14 @@ canvas{
 }
 
 .playbutt{
+  top:50%;
   bottom:0;
   margin: 0 auto;
   width:100%;
   height:30%;
   float:right;
   background-color: black;
+
 
 }
 
@@ -180,15 +185,30 @@ margin-bottom: -500em;
   margin-left: 5px;
   text-align: left;
 }
-
+.button.large.hpbottom {
+  margin:auto;
+  text-align:center;
+  display:block;
+  padding-top:50px;
+}
 @media screen and (max-width: 480px){
-
+.button.large.hpbottom {
+    padding-top: 5px;
+  }
+.row1{
+  height:430px
+}
 .column.right {
   width:100%;
 }
 .column.left {
   width:100%;
 }
+.container1 {
+  height:auto;
+}
+.descrtext {
+  height:auto
 }
 
 }
