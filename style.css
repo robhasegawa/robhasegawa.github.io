@@ -155,12 +155,9 @@ canvas{
 }
 .row1 {
     width:100%;
-    height:400px;
-    overflow: hidden;
 }
 .column {
   float: left;
-  min-height: 200px;
   overflow: hidden;
 }
 .column.left {
@@ -174,9 +171,7 @@ canvas{
 .column.right {
   width:25%;
   background-color: CADETBLUE;
-  height:400px;
-  padding-bottom: 500em;
-margin-bottom: -500em;
+
 
 }
 
@@ -190,14 +185,12 @@ margin-bottom: -500em;
   text-align:center;
   display:block;
   padding-top:50px;
+  height:50px;
 }
 @media screen and (max-width: 480px){
 .button.large.hpbottom {
     padding-top: 5px;
   }
-.row1{
-  height:430px
-}
 .column.right {
   width:100%;
 }
@@ -212,3 +205,23 @@ margin-bottom: -500em;
 }
 
 }
+
+@media screen and (min-width : 480px)
+and (max-width : 920px) {
+  .button.large.hpbottom {
+      padding-top: 5px;
+    }
+  .column.right {
+    width:100%;
+  }
+  .column.left {
+    width:100%;
+  }
+  .container1 {
+    height:auto;
+  }
+  .descrtext {
+    height:auto
+  }
+
+  }
