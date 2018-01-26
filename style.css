@@ -40,7 +40,7 @@ a{
     text-decoration: none;
     display: inline-block;
     padding: 5px;
-    height:100%;
+    text-align: center;
 }
 a:hover{
   color:black;
@@ -99,7 +99,6 @@ canvas{
 }
 
 .resumebutt {
-  display: inline-block;
   float: right;
   background-color: black;
   height:100%;
