@@ -3,7 +3,7 @@ var ufosCanvas = document.querySelector("#ufos");
 var ctxU = ufosCanvas.getContext("2d");
 ufosCanvas.width = 400;
 ufosCanvas.height = 500;
-var raf;
+var timer = getRandomInt(1000,5000);
 
 function getRandomInt (min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
 
@@ -16,6 +16,7 @@ var ufo = {
   color:'red',
 
   draw: function(){
+
     ctxU.beginPath();
     ctxU.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
     ctxU.closePath();
@@ -27,8 +28,19 @@ function draw(){
 
   ctxU.clearRect(0,0,ufosCanvas.width,ufosCanvas.height);
   ufo.draw();
-  ufo.x += ufo.vx;
-  requestAnimationFrame(draw);
 
+  ufo.x += ufo.vx;
+
+    if (ufo.x <= 0){
+        ctxU.clearRect(0,0,ufosCanvas.width,ufosCanvas.height);
+        setTimeout(function(){
+        requestAnimationFrame(draw);
+      },getRandomInt(3000,8000));
+       ufo.x = 400;
+       ufo.y = getRandomInt(0,500);
+      }
+else {
+  requestAnimationFrame(draw);
+}
 }
 requestAnimationFrame(draw);
