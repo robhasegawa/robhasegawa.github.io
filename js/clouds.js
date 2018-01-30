@@ -51,9 +51,9 @@ function drawClouds(){
   } else {
     drawCloud3();
   }
-
-  ctxC.drawImage(cloud1,c1.x,c1.y);
   ctxC.drawImage(cloud2,c2.x,c2.y);
+  ctxC.drawImage(cloud1,c1.x,c1.y);
+
   requestAnimationFrame(drawClouds);
 
 
