@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom right, azure, slategrey);
+    background-color:#04041d;
     font-family: 'VT323', monospace;
     margin:auto;
     text-align: center;
@@ -7,7 +7,11 @@ body {
 
 h1 {
     font-size: 40px;
-    color: black;
+    color: white;
+    z-index: 2;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
  h2 {
@@ -63,7 +67,7 @@ canvas{
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(to bottom, #2b1960  0%, #3582a5 100%);
+  background: linear-gradient(to bottom, #0d0c3f 0%,#254cba 49%,#ad76db 100%);
 }
 #twinkles{
   left: 0;
@@ -82,6 +86,24 @@ canvas{
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+#moon{
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#fg{
+  top:450px;
+  width:400px;
+  height:300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 1;
+  max-height: none;
 }
 .canvasdiv {
   position: relative;
@@ -130,7 +152,7 @@ canvas{
 }
 
 .container0 {
-  height:640px;
+  height:700px;
   float: inherit;
 }
 

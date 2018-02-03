@@ -22,18 +22,15 @@ var c2 = {
 }
 var c3 = {
   x:100,
-  y:50,
+  y:300,
   vx:-.15
 }
-function drawCloud3(){
-  ctxC.drawImage(cloud3,c3.x,c3.y);
-  c3.x += c3.vx;
 
 
-}
 function drawClouds(){
   c1.x += c1.vx;
   c2.x += c2.vx;
+  c3.x += c3.vx;
   ctxC.clearRect(0,0,cvsC.width,cvsC.height);
   if (c1.x <= -cloud1.width){
     c1.x = 400;
@@ -44,19 +41,11 @@ function drawClouds(){
   if (c3.x <= -300){
     ctxC.clearRect(0,0,cvsC.width,cvsC.height);
 
-    setTimeout(function(){
-      drawCloud3();
-    },5000);
-    c3.x= 400;
-  } else {
-    drawCloud3();
   }
-  ctxC.drawImage(cloud2,c2.x,c2.y);
-  ctxC.drawImage(cloud1,c1.x,c1.y);
-
+//  ctxC.drawImage(cloud3,c3.x,c3.y);
+//  ctxC.drawImage(cloud2,c2.x,c2.y);
+//  ctxC.drawImage(cloud1,c1.x,c1.y);
   requestAnimationFrame(drawClouds);
-
-
 }
 
 

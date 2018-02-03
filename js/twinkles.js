@@ -79,9 +79,9 @@ var requestAnimationFrame = window.requestAnimationFrame ||
 // render the twinkles
 function mainLoop(time) {
   // resize canva if page size changes
-  if (tcanvas.width !== 400 || tcanvas.height !== 500) {
+  if (tcanvas.width !== 400 || tcanvas.height !== 400) {
     tcanvas.width = 400;
-    tcanvas.height = 500;
+    tcanvas.height = 400;
     // create a new set of twinkles
     twinkles.length = 0;
     // density is number of pixels one the tcanvas that has one star
