@@ -1,4 +1,4 @@
-var tcanvas =document.getElementById("twinkles");
+var tcanvas =document.querySelector("#twinkles");
 var context = tcanvas.getContext("2d");
 // function calls a callback count times. Saves typing out for loops all the time
 var doFor = (count, callback) => {

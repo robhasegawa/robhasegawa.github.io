@@ -1,4 +1,3 @@
-
 var ufosCanvas = document.querySelector("#ufos");
 var ctxU = ufosCanvas.getContext("2d");
 ufosCanvas.width = 400;

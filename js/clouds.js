@@ -8,22 +8,22 @@ cloud1.src = "images/cloud1.png";
 var cloud2 = new Image();
 cloud2.src = "images/cloud2.png";
 var cloud3 = new Image();
-cloud3.src = "images/cloud3.png";
+cloud3.src = "images/cloud2.png";
 
 var c1 = {
   x:0,
   y:300,
-  vx:-.1
+  vx:-.03
 }
 var c2 = {
-  x:-200,
-  y:130,
-  vx:-.05
+  x:-600,
+  y:300,
+  vx:-.03
 }
 var c3 = {
-  x:100,
+  x:199,
   y:300,
-  vx:-.15
+  vx:-.03
 }
 
 
@@ -36,15 +36,14 @@ function drawClouds(){
     c1.x = 400;
   }
   if (c2.x <= -cloud2.width){
-    c2.x = 400;
+    c2.x = c3.x+799;
   }
-  if (c3.x <= -300){
-    ctxC.clearRect(0,0,cvsC.width,cvsC.height);
-
+  if (c3.x <= -cloud3.width){
+    c3.x = c2.x+799;
   }
-//  ctxC.drawImage(cloud3,c3.x,c3.y);
-//  ctxC.drawImage(cloud2,c2.x,c2.y);
 //  ctxC.drawImage(cloud1,c1.x,c1.y);
+  ctxC.drawImage(cloud2,c2.x,c2.y);
+  ctxC.drawImage(cloud3,c3.x,c3.y);
   requestAnimationFrame(drawClouds);
 }
 
