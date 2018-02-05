@@ -1,5 +1,5 @@
 var tcanvas =document.querySelector("#twinkles");
-var context = tcanvas.getContext("2d");
+var contextS = tcanvas.getContext("2d");
 // function calls a callback count times. Saves typing out for loops all the time
 var doFor = (count, callback) => {
   var i = 0;
@@ -45,13 +45,13 @@ var star = { // define a star
       this.col = str;
     }
 
-    context.fillStyle = this.col;
+    contextS.fillStyle = this.col;
     // move star around  a pixel. Again its not random
     // but a gaussian distrabution. The movement is sub pixel and will only
     // make the twinkles brightness vary not look like its moving
     var ox = (Math.random() + Math.random() + Math.random() + Math.random()) / 4;
     var oy = (Math.random() + Math.random() + Math.random() + Math.random()) / 4;
-    context.fillRect(this.pos.x , this.pos.y , this.size, this.size);
+    contextS.fillRect(this.pos.x , this.pos.y , this.size, this.size);
   }
 }
 // create a random star
@@ -88,7 +88,7 @@ function mainLoop(time) {
     starCount = Math.floor((tcanvas.width * tcanvas.height) / density);
     // create the random twinkles;
     doFor(starCount, () => createStar(point(randI(tcanvas.width), randI(tcanvas.height))));
-    skyGrad = context.createLinearGradient(0,0,0,tcanvas.height);
+    skyGrad = contextS.createLinearGradient(0,0,0,tcanvas.height);
     skyGrad.addColorStop(0,"black");
     doFor(100,(i)=>{
         var pos  = clamp(i/100,0,1);
@@ -106,8 +106,8 @@ function mainLoop(time) {
      skyGrad.addColorStop(1,"rgb("+skyColour[0]+","+skyColour[1]+","+skyColour[2]+")");
 
   }
-//  context.fillStyle = skyGrad;
-//  context.fillRect(0, 0, tcanvas.width, tcanvas.height);
+//  contextS.fillStyle = skyGrad;
+//  contextS.fillRect(0, 0, tcanvas.width, tcanvas.height);
   doFor(starCount, (i) => twinkles[i].draw());
 
   requestAnimationFrame(mainLoop);

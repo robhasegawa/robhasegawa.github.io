@@ -9,7 +9,7 @@ cvsM.height = 500;
 
 //moon
 ctxM.beginPath();
-ctxM.arc(75,75,7.5,0,2*Math.PI);
+ctxM.arc(75,75,10,0,2*Math.PI);
 ctxM.fillStyle = 'rgb(214, 198, 242)';
 ctxM.fill();
 //sun

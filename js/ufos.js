@@ -45,14 +45,12 @@ function flashGreen(){
 }
 
 function flashInterval(){
-  ctxU.clearRect(ufo.x-5,ufo.y-5,10 ,10);
   setTimeout(function(){
     requestAnimationFrame(flashGreen);
     },10);
 }
 
 function flashInterval2(){
-  ctxU.clearRect(ufo.x-5,ufo.y-5,10 ,10);
   setTimeout(function(){
     requestAnimationFrame(flashRed);
     },1000);

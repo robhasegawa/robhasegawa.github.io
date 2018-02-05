@@ -1,14 +1,15 @@
+//Made in 2018 by Robert Hasegawa
+
 function getRandomInt (min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
 
-var myCanvas = document.querySelector("#starfield");
-myCanvas.width = 400;
-myCanvas.height = 500;
+
 
 var canvas = document.getElementById("starfield");
 var ctx = canvas.getContext("2d");
-
 var w = 400;
 var h = 500;
+canvas.width = w;
+canvas.height = h;
 
 var stars = [];
 
