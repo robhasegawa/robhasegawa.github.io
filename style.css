@@ -18,7 +18,7 @@ h1 {
     font-family: 'VT323', monospace;
 }
 h3{
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 5px;
   color:white;
 }
@@ -207,6 +207,7 @@ canvas{
 
 .descrtext{
   height:195px;
+  margin-top:5px;
   margin-left: 5px;
   text-align: left;
   color:white;
