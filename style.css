@@ -195,7 +195,7 @@ canvas{
 }
 .column.left {
   width: 75%;
-  background-color: black;
+  background-color: #04041d;
   overflow: hidden;
   padding-bottom: 500em;
   margin-bottom: -500em;
