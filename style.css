@@ -266,3 +266,12 @@ and (max-width : 920px) {
   }
 
   }
+  
+  @media screen and (max-width: 400px){
+    canvas{
+      width:100%;
+    }
+    .nav-buttons{
+      width:100%;
+    }
+  }
