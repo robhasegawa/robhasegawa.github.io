@@ -159,7 +159,7 @@ canvas{
 }
 
 .container0 {
-  height:500px;
+  height:auto;
   float: inherit;
 }
 
@@ -243,6 +243,7 @@ canvas{
 .column.left {
   width:100%;
 }
+
 .container1 {
   height:auto;
 }
@@ -279,4 +280,5 @@ and (max-width : 920px) {
     .nav-buttons{
       width:100%;
     }
+
   }
