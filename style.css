@@ -58,7 +58,12 @@ footer{
   width:100%;
   height:auto;
   float:right;
-  padding-top:50px
+  padding-top:30px;
+  padding-bottom: 10px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
 }
 canvas{
   position: absolute;
@@ -221,12 +226,12 @@ canvas{
   height:50px;
 }
 .mediaLinks{
-  float:left;
-  margin-left:20px;
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
 }
 .copyright{
-  float:right;
-  margin-right: 20px;
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
 }
 @media screen and (max-width: 480px){
 .button.large.hpbottom {
