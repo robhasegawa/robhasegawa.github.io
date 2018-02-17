@@ -158,12 +158,10 @@ button:hover{
   top:0px;
   background-color: black;
 }
-
-.contactbutt {
-  float: right;
+.aboutbutt {
+  float: left;
   background-color: black;
-  height:100%;
-
+  height: 100%;
 }
 .projectbutt{
   position:absolute;
@@ -173,12 +171,14 @@ button:hover{
   width:70px;
   left:40%;
 }
-
-.aboutbutt {
-  float: left;
+.contactbutt {
+  float: right;
   background-color: black;
-  height: 100%;
+  height:100%;
 }
+
+
+
 
 .playbutt{
   top:50%;
