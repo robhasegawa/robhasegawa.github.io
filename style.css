@@ -1,8 +1,9 @@
 body {
     background-color:#04041d;
     font-family: 'VT323', monospace;
-    margin:auto;
+    margin:0;
     text-align: center;
+    padding:0;
 }
 
 h1 {
@@ -44,7 +45,7 @@ a{
     background-color: transparent;
     text-decoration: none;
     display: inline-block;
-    padding: 5px;
+    padding: 7.5px;
     text-align: center;
 }
 a:hover{
@@ -67,6 +68,30 @@ footer{
 }
 canvas{
   position: absolute;
+}
+button {
+  color:white;
+  border:none;
+  outline:none;
+  background-color: black;
+  font-family: 'VT323', monospace;
+  font-size:1em;
+  text-align: center;
+  height:100%;
+}
+button:hover{
+  background-color: white;
+  color:black;
+}
+#projects{
+
+}
+#aboutme{
+  margin:auto;
+  width:400px;
+  color:white;
+  text-align: center;
+  font-size:1.5em;
 }
 
 #starfield{
@@ -126,6 +151,7 @@ canvas{
 
 .nav-buttons {
 
+  position: relative;
   margin:auto;
   height: 30px;
   width:400px;
@@ -133,14 +159,22 @@ canvas{
   background-color: black;
 }
 
-.resumebutt {
+.contactbutt {
   float: right;
   background-color: black;
   height:100%;
 
 }
+.projectbutt{
+  position:absolute;
+  margin:auto;
+  background-color: black;
+  height: 30px;
+  width:70px;
+  left:40%;
+}
 
-.contactbutt {
+.aboutbutt {
   float: left;
   background-color: black;
   height: 100%;
@@ -250,8 +284,8 @@ canvas{
 .descrtext {
   height:auto
 }
-
 }
+
 
 @media screen and (min-width : 401px)
 and (max-width : 920px) {
@@ -279,6 +313,9 @@ and (max-width : 920px) {
     }
     .nav-buttons{
       width:100%;
+    }
+    #aboutme{
+      width:95%;
     }
 
   }

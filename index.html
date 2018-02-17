@@ -13,14 +13,23 @@
 
   <body>
   <div class="container0">
+
     <div class="nav-buttons">
-      <div class="contactbutt">
+
+      <div class="aboutbutt">
         <a href="about.html">about</a>
       </div>
-      <div class="resumebutt">
-        <a href="resume.pdf">resume</a>
+      <div class="projectbutt">
+        <button onclick="getElementById('projects').scrollIntoView(true)"
+                >
+          projects
+        </button>
+      </div>
+      <div class="contactbutt">
+        <a href="contact.html">contact</a>
       </div>
     </div>
+
 
     <div class="canvasdiv">
       <canvas id="starfield"></canvas>  <script  src="js/index.js"></script>
@@ -35,7 +44,8 @@
   <div class="seperator">
     <p>▼</p>
   </div>
-  <div class="container1">
+  <div id="projects">
+    <div class="container1">
     <div class="title">
         <h2>Ambient Looper: Music For Airports</h2>
     </div>
@@ -87,6 +97,7 @@
     </div>
   </div>
 
+</div>
 
 
   <footer>
@@ -100,5 +111,6 @@
     </p>
   </div>
   </footer>
+
   </body>
 </html>
