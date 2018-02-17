@@ -164,12 +164,11 @@ button:hover{
   height: 100%;
 }
 .projectbutt{
-  position:absolute;
-  margin:auto;
+  display: inline-block;
+  margin:0 auto;
   background-color: black;
   height: 30px;
-  width:70px;
-  left:40%;
+  width:auto;
 }
 .contactbutt {
   float: right;
