@@ -328,4 +328,7 @@ and (max-width : 920px) {
     .nav-buttons{
       width:100%;
     }
+    #aboutme{
+      width:100%;
+    }
 }
