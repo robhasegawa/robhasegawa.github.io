@@ -43,19 +43,26 @@ function drawStars() {
 //toggle about div
 function showAbout() {
   var aboutGet = document.getElementById("aboutme");
+  var contactGet = document.getElementById("contactDiv");
   if (aboutGet.style.display === "block") {
   aboutGet.style.display = "none";
+  contactGet.style.display = "none";
   } else {
   aboutGet.style.display = "block";
+  contactGet.style.display = "none";
 }
 }
 //toggle contact div
 function showContact() {
   var contactGet = document.getElementById("contactDiv");
+  var aboutGet = document.getElementById("aboutme");
   if (contactGet.style.display === "block") {
   contactGet.style.display = "none";
+  aboutGet.style.display = "none";
   } else {
   contactGet.style.display = "block";
+  aboutGet.style.display = "none";
+
 }
 }
 
