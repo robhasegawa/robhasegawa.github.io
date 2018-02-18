@@ -40,5 +40,23 @@ function drawStars() {
     ctx.fillRect( p.x, p.y, p.size, p.size );
   }
 }
+//toggle about div
+function showAbout() {
+  var aboutGet = document.getElementById("aboutme");
+  if (aboutGet.style.display === "block") {
+  aboutGet.style.display = "none";
+  } else {
+  aboutGet.style.display = "block";
+}
+}
+//toggle contact div
+function showContact() {
+  var contactGet = document.getElementById("contactDiv");
+  if (contactGet.style.display === "block") {
+  contactGet.style.display = "none";
+  } else {
+  contactGet.style.display = "block";
+}
+}
 
 setInterval(drawStars, 33);

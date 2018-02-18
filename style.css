@@ -83,15 +83,30 @@ button:hover{
   background-color: white;
   color:black;
 }
-#projects{
-
-}
-#aboutme{
+#contactDiv{
+  left:0;
+  right:0;
   margin:auto;
   width:400px;
+  height: 600px;
+  background-color: rgba(4,4,29,.75);
+  position: absolute;
+  color:white;
+  display: none;
+}
+
+#aboutme{
+  left:0;
+  right:0;
+  margin:auto;
+  width:400px;
+  height:600px;
   color:white;
   text-align: center;
-  font-size:1.5em;
+  font-size:1.25em;
+  position: absolute;
+  background-color: rgba(4,4,29,.75);
+  display: none;
 }
 
 #starfield{
