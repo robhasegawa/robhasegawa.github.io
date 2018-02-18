@@ -54,4 +54,4 @@ function drawClouds(){
 }
 
 
-window.onload = drawClouds;
+trees.onload = drawClouds;
