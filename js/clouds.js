@@ -54,4 +54,4 @@ function drawClouds(){
 }
 
 
-trees.onload = drawClouds;
+cloud2.onload = drawClouds;
