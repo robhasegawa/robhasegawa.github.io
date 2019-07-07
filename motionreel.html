@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=VT323|Roboto" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Motion Reel 2019</title>
+
+      <script type="text/javascript">
+        function infoToggle() {
+          var x = document.getElementById("infoBox");
+          var y = document.getElementById("infoButtonid");
+          var z = document.getElementById("closeButtonid");
+          if (x.style.display !== "block") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+          } else {
+            x.style.display = "none";
+            y.style.display = "block";
+          }
+        }
+        function closeToggle() {
+          var x = document.getElementById("infoBox");
+          var y = document.getElementById("infoButtonid");
+          var z = document.getElementById("closeButtonid");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+          } else {
+            x.style.display = "block";
+            y.style.display = "none";
+          }
+        }
+
+      </script>
+    </head>
+
+    <body>
+      <div class="pageContainer">
+        <div class="closeButton" id="closeButtonid">
+          <button onclick="closeToggle()" class="infobutt">
+            Close
+          </button>
+          </div>
+      <div class="containerBox" id="infoBox">
+        <div class="containerRow">
+          <div class="leftColumn">
+          Project Title
+          </div>
+          <div class="rightColumn">
+            Bureau 2019 Motion Reel
+            </div>
+          </div>
+
+          <div class="containerRow">
+            <div class="leftColumn">
+            Date
+            </div>
+            <div class="rightColumn">
+              2018-2019
+              </div>
+            </div>
+
+            <div class="containerRow">
+              <div class="leftColumn">
+              Type
+              </div>
+              <div class="rightColumn">
+                Digital Media Design
+                </div>
+              </div>
+
+              <div class="containerRow">
+                <div class="leftColumn">
+                Programs
+                </div>
+                <div class="rightColumn">
+                  <div class="infoImages">
+                    <img class="icon" src="images/icons/aftereffects.png" alt="Adobe After Effects"/>
+                    </div>
+                    <div class="infoImages">
+                    <img class="icon" src="images/icons/illustrator.png" alt="Adobe Illustrator"/>
+                    </div>
+                    <div class="infoImages">
+                    <img class="icon" src="images/icons/cinema4d.png" alt="Cinema 4D"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="containerRow">
+                  <div class="leftColumn">
+                  About
+                  </div>
+                  <div class="rightColumn">
+                    <p>
+                    This motion reel shows some highlights of the animation and video work I did
+                    over the year during my placement at the bureau, an in-house design studio
+                    at Swinburne.
+                    </p>
+                    </div>
+
+                  </div>
+                  <div class="backButt">
+                    <button onclick="javascript:history.back()"> Back</button>
+                    </div>
+      </div>
+
+
+      <div class="galleryContainer" id="imageBox">
+        <div class="infoButton" id="infoButtonid">
+          <button onclick="infoToggle()" class="infobutt">
+            project information
+          </button>
+          </div>
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JDJ09KFiLC8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </div>
+      </body>
+
+
+</html>

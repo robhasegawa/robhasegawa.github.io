@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=VT323|Roboto" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Design Process: Explained Video Series</title>
+
+      <script type="text/javascript">
+        function infoToggle() {
+          var x = document.getElementById("infoBox");
+          var y = document.getElementById("infoButtonid");
+          var z = document.getElementById("closeButtonid");
+          if (x.style.display !== "block") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+          } else {
+            x.style.display = "none";
+            y.style.display = "block";
+          }
+        }
+        function closeToggle() {
+          var x = document.getElementById("infoBox");
+          var y = document.getElementById("infoButtonid");
+          var z = document.getElementById("closeButtonid");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+          } else {
+            x.style.display = "block";
+            y.style.display = "none";
+          }
+        }
+
+      </script>
+    </head>
+
+    <body>
+      <div class="pageContainer">
+        <div class="closeButton" id="closeButtonid">
+          <button onclick="closeToggle()" class="infobutt">
+            Close
+          </button>
+          </div>
+      <div class="containerBox" id="infoBox">
+        <div class="containerRow">
+          <div class="leftColumn">
+          Project Title
+          </div>
+          <div class="rightColumn">
+            The Design Process: Explained Video Series
+            </div>
+          </div>
+
+          <div class="containerRow">
+            <div class="leftColumn">
+            Date
+            </div>
+            <div class="rightColumn">
+              2018-2019
+              </div>
+            </div>
+
+            <div class="containerRow">
+              <div class="leftColumn">
+              Type
+              </div>
+              <div class="rightColumn">
+                Video Production, Editing, Animation
+                </div>
+              </div>
+
+              <div class="containerRow">
+                <div class="leftColumn">
+                Programs
+                </div>
+                <div class="rightColumn">
+                  <div class="infoImages">
+                    <img class="icon" src="images/icons/aftereffects.png" alt="Adobe After Effects"/>
+                    </div>
+                    <div class="infoImages">
+                    <img class="icon" src="images/icons/illustrator.png" alt="Adobe Illustrator"/>
+                    </div>
+                    <div class="infoImages">
+                    <img class="icon" src="images/icons/premiere.png" alt="Premiere"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="containerRow">
+                  <div class="leftColumn">
+                  About
+                  </div>
+                  <div class="rightColumn">
+                    <p>
+
+                    A video series created for the industrial design course at Swinburne.
+                    The seven part video series aims to teach students how to bring their design
+                    from the research, ideation, refinement, all the way to selling it. I storyboarded,
+                    shot, edited and animated the series while at the Bureau design studio.
+
+                    </p>
+                    </div>
+                  </div>
+                  <div class="backButt">
+                    <button onclick="javascript:history.back()"> Back</button>
+                    </div>
+      </div>
+
+
+      <div class="galleryContainer" id="imageBox">
+        <div class="infoButton" id="infoButtonid">
+          <button onclick="infoToggle()" class="infobutt">
+            project information
+          </button>
+          </div>
+          <div class="embed">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3UNlpm6IivE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+          </div>
+
+          <div class="galleryimagecontainer">
+          <div class="galleryImage2">
+              <img class="gImage2" src="images/designprocess/dc1.png" alt/>
+            </div>
+              </div>
+
+
+
+              <div class="galleryimagecontainer">
+              <div class="galleryImage2">
+                  <img class="gImage2" src="images/designprocess/dc2.png" alt/>
+                </div>
+                  </div>
+
+
+                  <div class="galleryImage">
+                      <img class="gImage2" src="images/designprocess/hairdryer.gif" alt/>
+                    </div>
+
+
+                  <div class="galleryimagecontainer">
+                  <div class="galleryImage2">
+                      <img class="gImage2" src="images/designprocess/dc3.png" alt/>
+                    </div>
+                      </div>
+
+                      <div class="galleryimagecontainer">
+                      <div class="galleryImage2">
+                          <img class="gImage2" src="images/designprocess/dc4.png" alt/>
+                        </div>
+                          </div>
+
+      </div>
+      </body>
+
+
+</html>

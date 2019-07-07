@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=VT323|Roboto" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FHAD International Materials</title>
+
+      <script type="text/javascript">
+        function infoToggle() {
+          var x = document.getElementById("infoBox");
+          var y = document.getElementById("infoButtonid");
+          var z = document.getElementById("closeButtonid");
+          if (x.style.display !== "block") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "block";
+          } else {
+            x.style.display = "none";
+            y.style.display = "block";
+          }
+        }
+        function closeToggle() {
+          var x = document.getElementById("infoBox");
+          var y = document.getElementById("infoButtonid");
+          var z = document.getElementById("closeButtonid");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+          } else {
+            x.style.display = "block";
+            y.style.display = "none";
+          }
+        }
+
+      </script>
+    </head>
+
+    <body>
+      <div class="pageContainer">
+        <div class="closeButton" id="closeButtonid">
+          <button onclick="closeToggle()" class="infobutt">
+            Close
+          </button>
+          </div>
+      <div class="containerBox" id="infoBox">
+        <div class="containerRow">
+          <div class="leftColumn">
+          Project Title
+          </div>
+          <div class="rightColumn">
+            FHAD International Materials
+            </div>
+          </div>
+
+          <div class="containerRow">
+            <div class="leftColumn">
+            Date
+            </div>
+            <div class="rightColumn">
+              2018-2019
+              </div>
+            </div>
+
+            <div class="containerRow">
+              <div class="leftColumn">
+              Type
+              </div>
+              <div class="rightColumn">
+                Publication Design
+                </div>
+              </div>
+
+              <div class="containerRow">
+                <div class="leftColumn">
+                Programs
+                </div>
+                <div class="rightColumn">
+                  <div class="infoImages">
+                    <img class="icon" src="images/icons/indesign.png" alt="Adobe InDesign"/>
+                    </div>
+                    <div class="infoImages">
+                    <img class="icon" src="images/icons/illustrator.png" alt="Adobe Illustrator"/>
+                    </div>
+                    <div class="infoImages">
+                    <img class="icon" src="images/icons/photoshop.png" alt="Adobe Photoshop"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="containerRow">
+                  <div class="leftColumn">
+                  About
+                  </div>
+                  <div class="rightColumn">
+                    <p>  
+
+                    A project done for Swinburne's faculty of Health, Arts and Design.
+                    We were tasked with creating promotional materials for use overseas
+                    including a 10 page concertina and profile cards of researchers
+                    (based off trading&nbspcards).
+                    </p>
+                    </div>
+                  </div>
+                  <div class="backButt">
+                    <button onclick="javascript:history.back()"> Back</button>
+                    </div>
+      </div>
+
+
+      <div class="galleryContainer" id="imageBox">
+        <div class="infoButton" id="infoButtonid">
+          <button onclick="infoToggle()" class="infobutt">
+            project information
+          </button>
+          </div>
+        <div class="galleryImage">
+            <img class="gImage1" src="images/fhad/front_cascade.jpg" alt/>
+          </div>
+          <div class="galleryimagecontainer">
+
+          <div class="galleryImage2">
+              <img class="gImage2" src="images/fhad/front_full.jpg" alt/>
+            </div>
+            </div>
+            <div class="galleryimagecontainer">
+            <div class="galleryImage2">
+                <img class="gImage2" src="images/fhad/back_full.jpg" alt/>
+              </div>
+                </div>
+                <div class="galleryImage">
+                    <img class="gImage1" src="images/fhad/fhad-cards-04.jpg" alt/>
+                  </div>
+                <div class="galleryimagecontainer">
+                <div class="galleryImage2">
+                    <img class="gImage2" src="images/fhad/fhad-cards-03.jpg" alt/>
+                  </div>
+                </div>
+                <div class="galleryimagecontainer">
+                  <div class="galleryImage2">
+                      <img class="gImage2" src="images/fhad/fhad-cards-11.jpg" alt/>
+                    </div>
+                  </div>
+
+
+      </div>
+      </body>
+
+
+</html>
