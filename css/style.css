@@ -357,7 +357,7 @@ top: 0;
 }
 
 .rightColumn p{
-  font-size: .75vw;
+  font-size: 14px;
   text-align: left;
 }
 .infoImages{
@@ -464,6 +464,7 @@ justify-content: flex-start;
 
 .infoButton{
   display: block;
+  z-index: 2;
 }
 .button.large.hpbottom {
     padding-top: 5px;
@@ -513,6 +514,10 @@ justify-content: flex-start;
  height:10vw;
 
 }
+.rightColumn p{
+  font-size: 3vw;
+  text-align: left;
+}
 }
 
 
@@ -520,6 +525,7 @@ justify-content: flex-start;
 and (max-width : 920px) {
   .infoButton{
     display: block;
+    z-index: 2;
   }
   .button.large.hpbottom {
       padding-top: 5px;
@@ -574,6 +580,11 @@ and (max-width : 920px) {
     margin: 0 auto;
   }
 
+  .rightColumn p{
+    font-size: 2vw;
+    text-align: left;
+  }
+
 }
 
 @media screen and (max-width: 400px){
@@ -596,5 +607,10 @@ and (max-width : 920px) {
     .infoImages{
      height:10vw;
 
+    }
+
+    .rightColumn p{
+      font-size: 3vw;
+      text-align: left;
     }
 }
