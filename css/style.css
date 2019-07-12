@@ -108,6 +108,11 @@ button:hover{
   color:white;
   display: none;
 }
+#contactDiv a{
+  font-size:18px;
+  font-family: roboto;
+
+}
 
 #aboutme{
   left:0;
