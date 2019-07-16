@@ -107,12 +107,17 @@ button:hover{
   position: absolute;
   color:white;
   display: none;
+  font-size:1.25em;
+
 }
 #contactDiv a{
-  font-size:18px;
   font-family: roboto;
 
 }
+#contactDiv p{
+padding: 20px;
+}
+
 
 #aboutme{
   left:0;
