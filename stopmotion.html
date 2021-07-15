@@ -1,174 +1,668 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-US">
+    <head>
+        <title>Stopmotion Test | Rob Hasegawa</title>
 
-<style>
-* {
-    box-sizing: border-box;
-}
+        <!--Meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta property="og:title" content="Air. Lightweight Portfolio  Photography HTML Theme" />
+        <meta property="og:description" content="The landing page of Air. lightweight responsive theme, designed by BWSM" />
+        <meta property="og:url" content="http://html5.seatheme.net/air/entry/" />
+        <meta property="og:site_name" content="Air. Lightweight Portfolio &amp; Photography HTML Theme Live Demo Site" />
+        <meta property="og:image" content="http://html5.seatheme.net/air/entry/01-cover.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-body {
-    margin: 0;
-    font-family: 'VT323', monospace;
-    color:white;
-    background-color:#04041d;
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
 
-}
+        <!-- Google Fonts -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C300%7CLibre+Baskerville%3Aregular%2Citalic%2C700' type='text/css' media='all' />
+
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
+
+        <!-- Font Icon CSS -->
+        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
+
+        <!-- Owl Carousel Plugin CSS -->
+        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin CSS -->
+        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin Skin CSS -->
+        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
+
+        <!-- Air. Theme Elements CSS -->
+        <link rel='stylesheet' href='css/pagebuild.css' type='text/css' media='screen' />
+
+        <!-- Air. Theme Main CSS -->
+        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
+
+        <!-- IE hack -->
+        <!--[if lte IE 9]>
+        <link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
+        <![endif]-->
+
+        <!--[if lte IE 9]>
+        <script type="text/javascript" src="js/ie.js"></script>
+        <![endif]-->
+
+        <!--[if lte IE 8]>
+        <div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+        <![endif]-->
+
+    </head>
+
+    <body class="single single-post postid-511 single-format-gallery default-dark-logo pswp-light-skin responsive-ux navi-hide dark-logo single-portfolio-fullwidth header-sticky gallery-show-social-share-body preload">
+
+        <!--Page Loader-->
+        <div class="page-loading fullscreen-wrap visible">
+            <div class="page-loading-inn">
+                <div class="page-loading-transform">
+                    <div class="site-loading-logo"><img src="img/demo/logo-loading.png" alt="Air Theme" /></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Audio Player-->
+        <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+        <!--Main wrap-->
+        <div class="wrap-all">
+
+            <div id="wrap-outer">
+
+                <!--Header-->
+                <header id="header" class="">
+
+                    <div id="header-main">
+
+                        <div class="container-fluid">
+
+                          <!--
+                            <span id="navi-trigger">
+                                <span class="navi-trigger-text">
+                                    <span class="navi-trigger-text-menu navi-trigger-text-inn">MENU</span>
+                                    <span class="navi-trigger-text-close navi-trigger-text-inn">CLOSE</span>
+                                </span>
+                                <span class="navi-trigger-inn">
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line1"></span>
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line2"></span>
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line3"></span>
+                                </span>
+                            </span>
+                          -->
 
 
-.header {
-    text-align: left;
-    padding-left: 20px;
-}
+                            <div class="navi-logo">
 
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
+                                <div class="logo-wrap">
+                                    <div id="logo">
+                                        <a class="logo-a" href="index.html" title="Air Theme">
+                                            <h1 class="logo-h1 logo-not-show-txt">Air Theme</h1>
+                                            <img class="logo-image logo-dark" src="img/demo/logo_dark.png" alt="Air Theme" />
+                                            <span class="logo-light"><img class="logo-image" src="img/demo/logo_light.png" alt="Air Theme" /></span>
+                                        </a>
+                                    </div>
+                                </div><!--End logo wrap-->
 
-/* Create four equal columns that sits next to each other */
-.column {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
-}
+                            </div>
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
+                        </div>
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
+                    </div><!--End header main-->
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-</style>
-<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+                </header>
 
-<body>
+                <div id="menu-panel">
 
-<!-- Header -->
-<div class="header">
-  <h1>Stopmotion Test</h1>
-</div>
+                    <div class="menu-panel-inn fullscreen-wrap">
 
-<!-- Photo Grid -->
-<div class="row">
-  <div class="column">
-    <img src="images/gallery/1.jpg" style="width:100%">
-    <p>
-      ^Original image, sketch made in the winter of 2017.
-    </p>
-    <img src="images/gallery/2.jpg" style="width:100%">
-    <p>
-      ^Character concept sketch, the idea was to add depth to the illustration, to tell a story within it.
-    </p>
-    <img src="images/gallery/3.jpg" style="width:100%">
-    <p>
-      ^Character concept refinement, the design is based on pilgrims of North America
-    </p>
-    <img src="images/gallery/4.jpg" style="width:100%">
-    <p>
-      ^Alien concept
-    </p>
-    <img src="images/gallery/5.jpg" style="width:100%">
-    <p>
-      ^The cosmic egg, that the aliens and humans would trade. What for? Who knows.
-    </p>
-  </div>
-  <div class="column">
-    <img src="images/gallery/6.jpg" style="width:100%">
-    <p>
-      ^Further sketches to give an idea of what this floating road in space is. This is a birdhouse for the alien looking horses.
-    </p>
-    <img src="images/gallery/7.jpg" style="width:100%">
-    <p>
-      ^One page of the Storyboard, this helped refine the story.
-    </p>
-    <img src="images/gallery/8.jpg" style="width:100%">
-    <p>
-      ^Animation test sketch. Here you see the human and alien riding together. This sketch is to help me visualise the movement of the alien-horse.
-    </p>
-    <img src="images/gallery/9.gif" style="width:100%">
-    <p>
-      ^First animation test, done in Adobe Flash.
-    </p>
-    <img src="images/gallery/10.gif" style="width:100%">
-    <p>
-      ^Animation transferred to paper. Done with ink pens to test how the final animation might look.
-    </p>
-    <img src="images/gallery/11.jpg" style="width:100%">
-    <p>
-      ^Animation cycle of one of the hikers on the road. The diagonal lines are because all the characters in the scene are in an isometric view.
-    </p>
-    <img src="images/gallery/12.gif " style="width:100%">
-    <p>
-      ^Turtles walk cycle. Made in Flash.
-    </p>
-    <img src="images/gallery/13.gif" style="width:100%">
-    <p>
-      ^Hikers draft in Flash.
-    </p>
-  </div>
-  <div class="column">
-    <img src="images/gallery/14.jpg" style="width:100%">
-    <p>
-      ^Setting up the final shot at Swinburne University. Two reflected lights were used to create a soft shadow.
-    </p>
-    <img src="images/gallery/15.jpg" style="width:100%">
-    <p>
-      ^All the pieces of the animation ready to go.
-    </p>
-    <img src="images/gallery/16.jpg" style="width:100%">
-    <p>
-      ^Flag guy. Sadly, the flag came out quite jagged in the final shot.
-    </p>
-    <img src="images/gallery/17.jpg" style="width:100%">
-    <p>
-      ^The pilgrim from earlier concepts.
-    </p>
-    <img src="images/gallery/18.jpg" style="width:100%">
-    <p>
-      ^Turtle animation sheet and final form.
-    </p>
-    <img src="images/gallery/19.jpg" style="width:100%">
-    <p>
-      Turtle walk cycle ready to go.
-    </p>
-    <img src="images/gallery/20.jpg" style="width:100%">
-    <p>
-      ^Original test shot to explore how editing might work.
-    </p>
-    <img src="images/gallery/21.gif" style="width:100%">
-    <p>
-      ^Unedited footage of final shot. Took around 6 hours to shoot. Whole setup took around a day.
-    </p>
-    <a href="videos/SpaceRoadFinal.mp4">
-    <img src="images/gallery/22.png" style="width:100%">
-    </a>
-    <p>
-      ^Final shot. Click to see the full 30 second video.
-    </p>
-  </div>
+                        <nav id="navi">
 
-</div>
+                            <div id="navi-wrap" class="menu-navi-wrap">
 
-</body>
+                                <ul class="menu clearfix">
+                                    <li class="menu-item current_page_item menu-item-has-children">
+                                        <a>Homes</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="home2.html">Home Alternative</a></li>
+                                            <li class="menu-item"><a href="home3.html">Introduction in List</a></li>
+                                            <li class="menu-item"><a href="home4.html">Introduction above Portfolio</a></li>
+                                            <li class="menu-item"><a href="home5.html">Start with Slider</a></li>
+                                            <li class="menu-item"><a href="home6.html">Left Intro + Right Filter</a></li>
+                                            <li class="menu-item"><a href="home7.html">Open Items with Lightbox</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-246" class="menu-item"><a href="page-news.html">News</a></li>
+                                    <li id="menu-item-256" class="menu-item"><a href="page-about.html">About</a></li>
+                                    <li id="menu-item-247" class="menu-item"><a href="page-contact.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+
+                        </nav>
+
+                        <div id="menu-panel-bottom" class="container-fluid">
+
+                            <div class="menu-panel-bottom-left col-md-3 col-sm-3 col-xs-3">
+
+                                <div class="search-top-btn-class">
+                                    <span class="fa fa-search"></span>
+                                    <form class="search_top_form"  method="get" action="#">
+                                        <input type="search" id="s" name="s" class="search_top_form_text" placeholder="Type and Hit Enter">
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div class="menu-panel-bottom-right col-md-9 col-sm-9 col-xs-9">
+
+                                <div class="socialmeida-mobile">
+
+                                    <ul class="socialmeida clearfix">
+                                        <li class="socialmeida-li">
+                                            <a title="Facebook" href="https://www.facebook.com/uiueux" class="socialmeida-a">
+                                                <span class=""></span> <span class="socialmeida-text">Facebook</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="socialmeida-li">
+                                            <a title="Twitter" href="https://twitter.com/uiueux" class="socialmeida-a">
+                                                <span class=""></span> <span class="socialmeida-text">Twitter</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="socialmeida-li">
+                                            <a title="Behance" href="https://www.behance.net/bwsm" class="socialmeida-a">
+                                                <span class=""></span> <span class="socialmeida-text">Behance</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div><!--End #menu-panel-->
+
+
+                <!-- Main Content Wrap -->
+        		<div id="wrap">
+
+                    <!-- Main Content : List, text content ... -->
+        	        <div id="content">
+
+                        <div class="content_wrap_outer fullwrap-layout">
+
+                            <div id="content_wrap" class="">
+
+                                <article class="post type-post status-publish format-gallery has-post-thumbnail hentry category-branding category-featured category-illustration category-works post_format-post-format-gallery">
+
+                                    <div class="title-wrap container gallery-des-center">
+                                        <div class="title-wrap-con">
+                                            <h1 class="title-wrap-tit">Stopmotion Test</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="container gallery-post-des gallery-des-center">
+
+                                        <!-- Content -->
+                                        <div class="entry">
+                                            <p>An attempt at creating a live stopmotion animation. A story about a road suspended in space, and the the people that walk it.</p>
+                                        </div>
+
+                                        <!-- Social Media
+                                        <div class="social-bar">
+                                            <ul class="post_social post-meta-social">
+                                                <li class="post-meta-social-li">
+                                                    <a class="share postshareicon-facebook-wrap" href="http://www.facebook.com/sharer.php?u=http://themes.uiueux.com/air/asis-logos/" onclick="window.open('http://www.facebook.com/sharer.php?u=http://themes.uiueux.com/air/asis-logos/','Facebook','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;">
+                                                    <span class="fa fa-facebook postshareicon-facebook"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="post-meta-social-li">
+                                                    <a class="share postshareicon-twitter-wrap" href="http://twitter.com/share?url=http://themes.uiueux.com/air/asis-logos/&amp;text=Asís Logos" onclick="window.open('http://twitter.com/share?url=http://themes.uiueux.com/air/asis-logos/&amp;text=Asís Logos','Twitter share','width=600,height=300,left='+(screen.availWidth/2-300)+',top='+(screen.availHeight/2-150)+''); return false;" >
+                                                    <span class="fa fa-twitter postshareicon-twitter"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="post-meta-social-li">
+                                                    <a class="share postshareicon-googleplus-wrap" href="https://plus.google.com/share?url=http://themes.uiueux.com/air/asis-logos/" onclick="window.open('https://plus.google.com/share?url=http://themes.uiueux.com/air/asis-logos/','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                                    <span class="fa fa-google-plus postshareicon-googleplus"></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="post-meta-social-li">
+                                                    <a class="share postshareicon-pinterest-wrap" href="javascript:;" onclick="javascript:window.open('http://pinterest.com/pin/create/bookmarklet/?url=http://themes.uiueux.com/air/asis-logos/&amp;is_video=false&amp;media=http://themes.uiueux.com/air/wp-content/uploads/sites/3/2016/09/lata.jpg','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                                    <span class="fa fa-pinterest  postshareicon-pinterest"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+
+                                    </div>
+
+                                    <!--Gallery  Wrap-->
+                                    <div class="blog-unit-gallery-wrap gallery-spacing-60 container">
+
+                                        <div class="single-gallery-wrap-inn" data-style="">
+
+                                            <div class="list-layout lightbox-photoswipe" data-gap="60">
+
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/1.jpg" data-size="1252x1759">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-001" title="logo-001" src="img/blank.gif" data-src="img/gallery/1.jpg" width="1252" height="1759" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/2.jpg" data-size="835x784">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-002" title="logo-002" src="img/blank.gif" data-src="img/gallery/2.jpg" width="835" height="784" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/3.jpg" data-size="900x1369">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-003" title="logo-003" src="img/blank.gif" data-src="img/gallery/3.jpg" width="900" height="1369" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/4.jpg" data-size="201x421">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-004" title="logo-004" src="img/blank.gif" data-src="img/gallery/4.jpg" width="201" height="421" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/5.jpg" data-size="305x440">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-005" title="logo-005" src="img/blank.gif" data-src="img/gallery/5.jpg" width="305" height="440" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/6.jpg" data-size="1400x789">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-006" title="logo-006" src="img/blank.gif" data-src="img/gallery/6.jpg" width="877" height="620" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/7.jpg" data-size="521x638">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-007" title="logo-007" src="img/gallery/7.jpg" data-src="img/gallery/7.jpg" width="521" height="638" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/8.jpg" data-size="1156x789">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-008" title="logo-008" src="img/blank.gif" data-src="img/gallery/8.jpg" width="1156" height="789" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/9.gif" data-size="800x450">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-009" title="logo-009" src="img/blank.gif" data-src="img/gallery/9.gif" width="800" height="450" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/10.gif" data-size="526x372">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-010" title="logo-010" src="img/blank.gif" data-src="img/gallery/10.gif" width="526" height="372" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/11.jpg" data-size="1538x2201">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-011" title="logo-011" src="img/blank.gif" data-src="img/gallery/11.jpg" width="1538" height="2201" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/12.gif" data-size="550x400">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-012" title="logo-012" src="img/blank.gif" data-src="img/gallery/12.gif" width="550" height="400" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/13.gif" data-size="526x372">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-010" title="logo-010" src="img/blank.gif" data-src="img/gallery/13.gif" width="526" height="372" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/14.jpg" data-size="1632x1224">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-011" title="logo-011" src="img/blank.gif" data-src="img/gallery/14.jpg" width="1632" height="1224" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/15.jpg" data-size="1306x979">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-012" title="logo-012" src="img/blank.gif" data-src="img/gallery/15.jpg" width="1306" height="979" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/16.jpg" data-size="1224x1632">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-010" title="logo-010" src="img/blank.gif" data-src="img/gallery/16.jpg" width="1224" height="1632" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/17.jpg" data-size="1224x1632">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-011" title="logo-011" src="img/blank.gif" data-src="img/gallery/17.jpg" width="1224" height="1632" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/18.jpg" data-size="816x612">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-012" title="logo-012" src="img/blank.gif" data-src="img/gallery/18.jpg" width="816" height="612" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+
+                                                <div class="list-layout-col list-layout-col3 clearfix">
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/19.jpg" data-size="1632x1224">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-010" title="logo-010" src="img/blank.gif" data-src="img/gallery/19.jpg" width="1632" height="1224" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/20.jpg" data-size="1128x752">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-011" title="logo-011" src="img/blank.gif" data-src="img/gallery/20.jpg" width="1128" height="752" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+
+                                                    <div class="list-layout-col3-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/21.gif" data-size="480x270">
+                                                                    <span class="ux-lazyload-wrap" style=" padding-top: 56.307692307692%;">
+                                                                        <img alt="logo-012" title="logo-012" src="img/blank.gif" data-src="img/gallery/21.gif" width="480" height="270" class="list-layout-img gallery-images-img ux-lazyload-img lazy">
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                </div>
+
+                                                <div class="list-layout-col list-layout-col1 clearfix">
+
+                                                    <div class="list-layout-col1-item list-layout-item" style="">
+                                                        <div class="list-layout-inside">
+                                                            <div class="single-image mouse-over" data-lightbox="true">
+                                                                <a title="" class="lightbox-item" href="img/gallery/spaceroadfinal.mp4" data-size="1280x720" data-type="video">
+                                                                    <iframe width="100%" height="320" src="https://www.youtube.com/embed/ZZI86WGFxqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                </a>
+                                                            </div>
+                                                        </div><!--End list-layout-inside-->
+                                                    </div><!--End list-layout-item-->
+                                                  </div>
+                                            </div><!--End list-layout-->
+
+                                        </div><!--End single-gallery-wrap-inn-->
+
+                                    </div><!--End blog-unit-gallery-wrap-->
+
+                                    <!--Button Link-->
+
+
+                                </article>
+
+                            </div><!-- End #content_wrap-->
+
+                        </div><!-- End content_wrap_outer-->
+
+                    </div><!--End #content-->
+
+                    <footer id="footer" class="footer-cols-layout">
+
+                        <div class="footer-info">
+                            <div class="footer-container">
+                                <div class="span6">
+                                    <div id="logo-footer">
+                                        <a href="index.html" title="Air Theme">
+                                            <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="span6">
+                                    <div class="footer-social">
+                                        <ul class="socialmeida clearfix">
+
+                                            <li class="socialmeida-li">
+                                                <a title="Instagram" href="https://www.instagram.com/rob.hasegawa/" class="socialmeida-a">
+                                                    <span class=""></span> <span class="socialmeida-text">Instagram</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="socialmeida-li">
+                                                <a title="LinkedIn" href="https://www.linkedin.com/in/robhasegawa/" class="socialmeida-a">
+                                                    <span class=""></span> <span class="socialmeida-text">LinkedIn</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid back-top-wrap"><div id="back-top"></div></div>
+
+                    </footer>
+
+                </div><!--End #wrap -->
+
+               <div class="video-overlay modal"><span class="video-close"></span></div><!--end video-overlay-->
+
+            </div><!--End wrap-outer-->
+
+        </div><!--End wrap-all-->
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- jQuery Library -->
+        <script type='text/javascript' src='js/library/jquery.min.js'></script>
+        <!-- Main Js Plugin -->
+        <script type='text/javascript' src='js/main.min.js'></script>
+        <!-- Air. Theme main js -->
+        <script type='text/javascript' src='js/custom.theme.js'></script>
+
+    </body>
 </html>

@@ -1,312 +1,553 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <link href="https://fonts.googleapis.com/css?family=VT323|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Hasegawa</title>
-    <h1 style="text-align:center;">Robert Hasegawa</h1>
-    <script>
+<html lang="en-US">
+    <head>
+        <title>Rob Hasegawa </title>
 
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144835016-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!--Meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta property="og:title" content="Rob Hasegawa Digital Design" />
+        <meta property="og:description" content="Portfolio" />
+        <meta property="og:url" content="http://html5.seatheme.net/air/entry/" />
+        <meta property="og:site_name" content="Rob Hasegawa &amp; Portfolio" />
+        <meta property="og:image" content="http://html5.seatheme.net/air/entry/01-cover.jpg" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  gtag('config', 'UA-144835016-1');
-</script>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
 
-  </head>
+        <!-- Google Fonts -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap' type='text/css' media='all' />
 
-  <body>
-  <div class="container0">
-    <div class="nav-buttons">
-      <div class="aboutbutt">
-        <button onclick="showAbout()">about</button>
-      </div>
-      <div class="projectbutt">
-        <button onclick="getElementById('projects').scrollIntoView(true)" >
-          projects
-        </button>
-      </div>
-      <div class="contactbutt">
-        <button onclick="showContact()">contact</button>
-      </div>
-    </div>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
 
-    <div class="canvasdiv">
-      <canvas id="starfield"></canvas>  <script  src="js/index.js"></script>
-      <canvas id="twinkles"></canvas>   <script src="js/twinkles.js"></script>
-      <canvas id="moon"></canvas><script src="js/moon.js"></script>
-      <canvas id="ufos"></canvas> <script src="js/ufos.js"></script>
-      <canvas id="clouds"></canvas> <script src="js/clouds.js"></script>
-      <div id="aboutme">
-        <p>
-          I am a digital designer, working mainly in Illustrator and Photoshop.
-          I love designing things that give a sense of atmosphere and aesthetic,
-          whether that be a 3D space to walk around in, a website or an illustration.
-        </p>
-        <p>
-          I am currently teaching myself the basics of javascript and C#, with hopes
-          of creating more interactive and fresh experiences.
-        </p>
-      </div>
-      <div id="contactDiv">
-        <p>
-          Contact me at: <a href="mailto:rob5704@gmail.com">rob5704 [at] gmail.com</a>
-        </p>
-      </div>
-    </div>
+        <!-- Font Icon CSS -->
+        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
 
-  </div>
-  <div class="seperator">
-    <p style="text-align: center">▼</p>
-  </div>
-  <div id="projects">
-    <div class="title">
-        <h1>Projects</h1>
-    </div>
-    <div class="container">
+        <!-- Owl Carousel Plugin CSS -->
+        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
 
+        <!-- Lightbox Plugin CSS -->
+        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
 
-    <div class="row">
+        <!-- Lightbox Plugin Skin CSS -->
+        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
 
-      <a href="motionreel.html">
-      <div class="four columns">
-        <img src="images/ctp.gif" />
-        <h5>
-          Bureau Motion Reel 2019
-        </h5>
-        <h6>
-          2018 - 2019
-        </h6>
-      </div>
-    </a>
+        <!-- Air. Theme Elements CSS -->
+        <link rel='stylesheet' href='css/pagebuild.css' type='text/css' media='screen' />
 
-      <a href="designprocess.html">
-      <div class="four columns">
-        <img src="images/designprocess.gif" />
-        <h5>
-          The Design Process: Video Series
-        </h5>
-        <h6>
-          2019
-        </h6>
-      </div>
-    </a>
+        <!-- Air. Theme Main CSS -->
+        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
 
-      <a href="gatf.html">
-      <div class="four columns">
-        <img src="images/gatf/coffee_final.gif" />
-        <h5>
-          Go Against The Flow Animations
-        </h5>
-        <h6>
-          2019
-        </h6>
-      </div>
-    </a>
+        <!-- IE hack -->
+        <!--[if lte IE 9]>
+    	<link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
+    	<![endif]-->
 
+    	<!--[if lte IE 9]>
+    	<script type="text/javascript" src="js/ie.js"></script>
+    	<![endif]-->
 
+    	<!--[if lte IE 8]>
+    	<div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+    	<![endif]-->
 
+	</head>
 
-      <a href="fhad.html">
-      <div class="four columns">
-        <img src="images/fhad-concertina-square.jpg" />
-        <h5>
-          FHAD International Concertina
-        </h5>
-        <h6>
-          2018 - 2019
-        </h6>
-      </div>
-      </a>
+    <body class="page page-id-281 page-template-default default-dark-logo pswp-light-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-hide show-top-space dark-logo header-sticky preload">
 
-      <a href="tranzmate.html">
-      <div class="four columns">
-        <img src="images/tranzmate.png" />
-        <h5>
-          Tranzmate Pitch Video
-        </h5>
-        <h6>
-          2018
-        </h6>
-      </div>
-    </a>
-
-
-            <a href="designweek.html">
-            <div class="four columns">
-              <img src="images/SD_square.png" />
-              <h5>
-                Swinburne Design Week 2018
-              </h5>
-              <h6>
-                November 2018
-              </h6>
+        <!--Page Loader-->
+        <div class="page-loading fullscreen-wrap visible">
+            <div class="page-loading-inn">
+                <div class="page-loading-transform">
+                    <div class="site-loading-logo"><img src="img/demo/logo-loading.png" alt="Air Theme" /></div>
+                </div>
             </div>
-            </a>
-
-      <a href="scienceisland.html">
-      <div class="four columns">
-        <img src="images/scienceBanner-square.png" />
-        <h5>
-          Science Island
-        </h5>
-        <h6>
-          2017 - 2018
-        </h6>
-      </div>
-      </a>
-
-      <a href="stopmotion.html">
-        <div class="four columns">
-          <img src="images/spaceroad-square.jpg" />
-          <h5>
-          Space Road: Stopmotion
-        </h5>
-          <h6>
-            2017
-          </h6>
         </div>
-      </a>
 
-      <a href="ambient.html">
-      <div class="four columns">
-        <img src="images/ambient-square.jpg" />
-        <h5>
-          Ambient Looper: Music for Aiports
-        </h5>
-        <h6>
-          2017
-        </h6>
-      </div>
-    </a>
+        <!--Audio Player-->
+        <div id="jquery_jplayer" class="jp-jplayer"></div>
 
-  </div>
-</div>
-<!--
-    <div class="container1">
-    <div class="title">
-        <h2>Logo Designs</h2>
-    </div>
-    <div class="row1">
-      <div class="column left">
-        <img src="images/logos/banner.png" />
-      </div>
-      <div class="column right">
-        <h3>ABOUT</h3>
-        <div class="descrtext">
-          <p>
-            Some logo designs done throughout the years.
-          </p>
+        <!--Main wrap-->
+        <div class="wrap-all">
+
+            <div id="wrap-outer">
+
+                <!--Header-->
+                <header id="header" class="">
+
+                    <div id="header-main">
+
+                        <div class="container-fluid">
+                          <!--
+                            <span id="navi-trigger">
+                                <span class="navi-trigger-text">
+                                    <span class="navi-trigger-text-menu navi-trigger-text-inn">MENU</span>
+                                    <span class="navi-trigger-text-close navi-trigger-text-inn">CLOSE</span>
+                                </span>
+                                <span class="navi-trigger-inn">
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line1"></span>
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line2"></span>
+                                    <span class="navi-trigger-hamberg-line navi-trigger-hamberg-line3"></span>
+                                </span>
+                            </span>
+                          -->
+                            <div class="heade-meta">
+
+                                                       <nav id="navi-header">
+
+                                                           <!--<div id="navi_wrap" class="menu-menu-1-container">
+
+                                                               <ul class="menu clearfix">
+
+                                                                   <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Portfolio</a></li>
+                                                                   <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="page-about.html">About</a></li>
+                                                                   <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="page-contact.html">Contact</a></li>
+                                                               </ul>
+
+                                                           </div><!--End #navi_wrap-->
+
+                                                       </nav>
+
+                                                   </div>
+
+                            <div class="navi-logo">
+
+                                <div class="logo-wrap">
+                                    <div id="logo">
+                                        <a class="logo-a" href="index.html" title="Rob Hasegawa">
+                                            <h1 class="logo-h1 logo-not-show-txt">Rob Hasegawa</h1>
+                                            <img class="logo-image logo-dark" src="img/demo/logo_dark.png" alt="Rob Hasegawa" />
+                                            <span class="logo-light"><img class="logo-image" src="img/demo/logo_light.png" alt="Rob Hasegawa" /></span>
+                                        </a>
+                                    </div>
+                                </div><!--End logo wrap-->
+
+                            </div>
+
+                        </div>
+
+                    </div><!--End header main-->
+
+                </header>
+
+                <div id="menu-panel">
+
+                    <div class="menu-panel-inn fullscreen-wrap">
+
+                        <nav id="navi">
+
+                            <div id="navi-wrap" class="menu-navi-wrap">
+
+                                <ul class="menu clearfix">
+                                    <li id="menu-item-246" class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+                                    <li id="menu-item-256" class="menu-item"><a href="page-about.html">About</a></li>
+                                    <li id="menu-item-247" class="menu-item"><a href="page-contact.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+
+                        </nav>
+
+                        <div id="menu-panel-bottom" class="container-fluid">
+
+                            <div class="menu-panel-bottom-left col-md-3 col-sm-3 col-xs-3">
+                                <div class="search-top-btn-class">
+                                    <span class="fa fa-search"></span>
+                                    <form class="search_top_form"  method="get" action="#">
+                                        <input type="search" id="s" name="s" class="search_top_form_text" placeholder="Type and Hit Enter">
+                                    </form>
+                                </div>
+
+                            </div>
+
+
+                            <div class="menu-panel-bottom-right col-md-9 col-sm-9 col-xs-9">
+
+                                <div class="socialmeida-mobile">
+
+                                    <ul class="socialmeida clearfix">
+                                      <li class="socialmeida-li">
+                                          <a title="Instagram" href="https://www.instagram.com/rob.hasegawa/" class="socialmeida-a">
+                                              <span class=""></span> <span class="socialmeida-text">Instagram</span>
+                                          </a>
+                                      </li>
+
+                                      <li class="socialmeida-li">
+                                          <a title="LinkedIn" href="https://www.linkedin.com/in/robhasegawa/" class="socialmeida-a">
+                                              <span class=""></span> <span class="socialmeida-text">LinkedIn</span>
+                                          </a>
+                                      </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div><!--End #menu-panel-->
+
+
+                <!-- Main Content Wrap -->
+        		<div id="wrap">
+
+                    <!-- Main Content : List, text content ... -->
+        	        <div id="content">
+
+                        <div class="content_wrap_outer fullwrap-layout">
+
+                                <div id="content_wrap" >
+
+                                    <!--Introduction-->
+                                    <section class="ux-portfolio-template-intro container" >
+                                        <h2>Rob Hasegawa</h2>
+                                        <p>A creative working on everything from publication design to animations</p>
+                                        &nbsp
+                                        <h5>
+                                          email
+                                        </h5>
+                                        <p>hasegawa.rob [at] gmail.com</p>
+
+                                    </section>
+
+                                    <!--Portfolio Template-->
+                                    <div class="container-masonry ux-portfolio-spacing-40 ux-portfolio-3col container ux-has-filter filter-left" data-col="2" data-spacer="40" data-template="intro-above">
+
+                                        <!--Filter-->
+                                        <div class="clearfix filters">
+
+                                            <ul class="filters-ul container">
+                                                <li class="filters-li active"><a id="all" class="filters-a" href="#" data-filter="*">All<span class="filter-num">10</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_branding" href="#" data-catid="4" data-pageid="123">Branding<span class="filter-num">1</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_illustration" href="#" data-catid="7" data-pageid="123">Illustration<span class="filter-num">1</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_photography" href="#" data-catid="25" data-pageid="123">Photography<span class="filter-num">1</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_publication" href="#" data-catid="26" data-pageid="123">Publication Design<span class="filter-num">2</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_gamedesign" href="#" data-catid="27" data-pageid="123">Game Design<span class="filter-num">1</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_animation" href="#" data-catid="28" data-pageid="123">Animation<span class="filter-num">4</span></a></li>
+                                                <li class="filters-li"><a class="filters-a" data-filter=".filter_video" href="#" data-catid="29" data-pageid="123">Video Production<span class="filter-num">2</span></a></li>
+
+
+
+                                            </ul>
+
+                                        </div><!--End filter-->
+
+                                        <!--Portfolio Listing-->
+                                        <div class="masonry-list grid-list grid-mask-filled-left">
+
+                                            <section class="grid-item filter_featured filter_illustration filter_works filter_post-format-gallery" data-postid="170">
+
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="illustrations.html" title="Illustrations" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Illustration" class="grid-item-cate-a" data-filter=".filter_illustration">Illustration</a>&nbsp&nbsp&nbsp<a href="#" title="View all posts in Animation" class="grid-item-cate-a" data-filter=".filter_animation">Animation</a></span>
+                                                            <h2 class="grid-item-tit"><a href="illustrations.html" title="Illustrations" class="grid-item-tit-a">Illustrations & Animations</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/illo/bird.gif"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_publication filter_featured filter_works filter_post-format-gallery" data-postid="30">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="yvow.html" title="Base Visual Identity" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Publication Design" class="grid-item-cate-a" data-filter=".filter_publication">Publication Design</a></span>
+                                                            <h2 class="grid-item-tit"><a href="yvow.html" title="Base Visual Identity" class="grid-item-tit-a">Yarra Valley Online Water Research Report</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/yvow/thumbnail.png"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_works filter_post-format-gallery filter_publication" data-postid="48">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="fhad.html" title="Swinburne FHAD International Concertina" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"></span>
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Photography" class="grid-item-cate-a" data-filter=".filter_publication">Publication Design</a></span>
+                                                            <h2 class="grid-item-tit"><a href="fhad.html" title="Swinburne FHAD International Concertina" class="grid-item-tit-a">Swinburne FHAD International Concertina</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/fhad/Front_full.jpg"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_animation filter_video filter_works filter_post-format-gallery" data-postid="97">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="motionreel.html" title="Alfonza Woolwear" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Animation" class="grid-item-cate-a" data-filter=".filter_animation">Animation</a>&nbsp&nbsp&nbsp<a href="#" title="View all posts in Video Production" class="grid-item-cate-a" data-filter=".filter_video">Video Production</a></span>
+                                                            <h2 class="grid-item-tit"><a href="motionreel.html" title="Motion Reel" class="grid-item-tit-a">Bureau Motion Reel 2019</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/ctp.gif"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_video filter_works filter_post-format-gallery" data-postid="198">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="designprocess.html" title="Red Room" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Video Production" class="grid-item-cate-a" data-filter=".filter_video">Video Production</a></span>
+                                                            <h2 class="grid-item-tit"><a href="designprocess.html" title="The Design Process Explained" class="grid-item-tit-a">The Design Process Explained Video series</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/designprocess/designprocess.gif"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_animation filter_works filter_post-format-gallery" data-postid="16">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="Gatf.html" title="Go Against the Flow" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Branding" class="grid-item-cate-a" data-filter=".filter_animation">Animation</a></span>
+                                                            <h2 class="grid-item-tit"><a href="gatf.html" title="Bloc Brands" class="grid-item-tit-a">Go Against the Flow Instagram Animations</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/gatf/coffee_final.gif"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_animation filter_works filter_post-format-gallery" data-postid="1">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="tranzmate.html" title="Tranzmate Pitch Animation" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Animation" class="grid-item-cate-a" data-filter=".filter_animation">Animation</a></span>
+                                                            <h2 class="grid-item-tit"><a href="tranzmate.html" title="Tranzmate Pitch Animation" class="grid-item-tit-a">Tranzmate Pitch Animation</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 66.615384615385%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/tranzmate/mate2.png"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_branding filter_works filter_post-format-gallery" data-postid="61">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="designweek.html" title="Hikeshi" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Branding" class="grid-item-cate-a" data-filter=".filter_branding">Branding</a></span>
+                                                            <h2 class="grid-item-tit"><a href="designweek.html" title="Design week" class="grid-item-tit-a">Swinburne Design Week 2018</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/designweek/sd_square.png"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_gamedesign filter_uncategorized filter_works filter_post-format-gallery" data-postid="379">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="scienceisland.html" title="Branch Creative" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                            <span class="grid-item-cate"><a href="#" title="View all posts in Game Design" class="grid-item-cate-a" data-filter=".filter_gamedesign">Game Design</a></span>
+                                                            <h2 class="grid-item-tit"><a href="project-item-standard-text-center.html" title="Branch Creative" class="grid-item-tit-a">Science Island</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/science/shot1.png"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                            <section class="grid-item filter_animation filter_works filter_post-format-gallery" data-postid="511">
+                                                <div class="grid-item-inside" >
+                                                    <div class="grid-item-con">
+                                                        <a href="stopmotion.html" title="Stop-motion" class="grid-item-mask-link grid-item-open-url"></a>
+
+                                                        <div class="grid-item-con-text">
+                                                          <span class="grid-item-cate"><a href="#" title="View all posts in Animation" class="grid-item-cate-a" data-filter=".filter_animation">Animation</a></span>
+
+                                                            <h2 class="grid-item-tit"><a href="stopmotion.html" title="Stop-motion Test" class="grid-item-tit-a">Stop-Motion Test</a></h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="brick-content ux-lazyload-wrap" style=" padding-top: 75.384615384615%;">
+                                                        <div class="ux-lazyload-bgimg ux-background-img" data-bg="img/gallery/12.gif"></div>
+                                                    </div>
+
+                                                </div><!--End inside-->
+
+                                            </section>
+
+                                        </div><!--End masonry-list-->
+
+                                    </div><!-- End container-masonry -->
+
+                                </div><!-- End #content_wrap-->
+
+                        </div><!-- End content_wrap_outer-->
+
+                    </div><!--End #content-->
+
+                    <footer id="footer" class="footer-cols-layout">
+
+                        <div class="footer-info">
+                            <div class="footer-container">
+                                <div class="span6">
+                                    <div id="logo-footer">
+                                        <a href="index.html" title="Air Theme">
+                                            <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="span6">
+                                    <div class="footer-social">
+                                        <ul class="socialmeida clearfix">
+
+                                          <li class="socialmeida-li">
+                                              <a title="Instagram" href="https://www.instagram.com/rob.hasegawa/" class="socialmeida-a">
+                                                  <span class=""></span> <span class="socialmeida-text">Instagram</span>
+                                              </a>
+                                          </li>
+
+                                          <li class="socialmeida-li">
+                                              <a title="LinkedIn" href="https://www.linkedin.com/in/robhasegawa/" class="socialmeida-a">
+                                                  <span class=""></span> <span class="socialmeida-text">LinkedIn</span>
+                                              </a>
+                                          </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid back-top-wrap"><div id="back-top"></div></div>
+
+                    </footer>
+
+                </div><!--End #wrap -->
+
+               <div class="video-overlay modal"><span class="video-close"></span></div><!--end video-overlay-->
+
+            </div><!--End wrap-outer-->
+
+        </div><!--End wrap-all-->
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="playbutt">
-          <a  href="logos.html"
-              class="button large hpbottom"
-              style="padding-top: 35px;">
-              VIEW
-          </a>
-        </div>
-      </div>
-    </div>
-    </div>
 
-    <div class="container1">
-    <div class="title">
-        <h2>Ambient Looper: Music For Airports</h2>
-    </div>
-    <div class="row1">
-      <div class="column left">
-        <img src="images/ambient.jpg" />
-      </div>
-      <div class="column right">
-        <h3>ABOUT</h3>
-        <div class="descrtext">
-          <p>
-              This project aims to bring Brian Eno’s classic album ‘Ambient 1: Music for Airports’ to its original goal, a generative album that composes a random piece of music from a set of melodies. My version is still quite simple, and there are future plans to add more layers to the music. Until then, enjoy the relaxing piano music!
-          </p>
-        </div>
-        <div class="playbutt">
-          <a  href="ambient.html"
-              class="button large hpbottom"
-              style="padding-top: 35px;">
-              PLAY
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <!-- jQuery Library -->
+        <script type='text/javascript' src='js/library/jquery.min.js'></script>
+        <!-- Main Js Plugin -->
+        <script type='text/javascript' src='js/main.min.js'></script>
+        <!-- Air. Theme main js -->
+        <script type='text/javascript' src='js/custom.theme.js'></script>
 
-  <div class="container1">
-    <div class="title">
-        <h2>Space Road: Illustration to Stop Motion</h2>
-    </div>
-    <div class="row1">
-      <div class="column left">
-        <img src="images/spaceroadBanner.jpg" />
-      </div>
-      <div class="column right">
-        <h3>ABOUT</h3>
-        <div class="descrtext">
-          <p>
-            This is a stop motion animation test, to see how well my drawings could translate into the medium. The gallery shows the planning and testing done for the animation.
-          </p>
-        </div>
-        <div class="playbutt">
-          <a  href="stopmotion.html"
-              class="button large hpbottom"
-              style="padding-top: 35px;">
-              VIEW GALLERY
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container1">
-  <div class="title">
-      <h2>Koncent South Melbourne: Area Map</h2>
-  </div>
-  <div class="row1">
-    <div class="column left">
-      <img src="images/KONCENT_map_2016_FINAL_Web.png" />
-    </div>
-    <div class="column right">
-      <h3>ABOUT</h3>
-      <div class="descrtext">
-        <p>
-          An area map for Koncent Melbourne, located on Coventry Street, South Melbourne. This map aims to bring interest to the street by pointing to the unique shops surrounding Koncent. Made in 2016.
-        </p>
-      </div>
-      <div class="playbutt">
-        <a  href="map.html"
-            class="button large hpbottom"
-            style="padding-top: 35px;">
-            VIEW
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
--->
-</div>
-
-
-  <footer>
-  <div class="mediaLinks">
-    <a  href="https://www.instagram.com/4dtoaster/"
-        style="padding:0px;float:left;padding-left:5px;padding-right:5px;">>INSTAGRAM</a>
-  </div>
-  <div class="copyright">
-    <p style="text-align:right; padding:0;margin:0;padding-right:5px;">
-      © Robert Hasegawa 2019
-    </p>
-  </div>
-  </footer>
-  </body>
+    </body>
 </html>
