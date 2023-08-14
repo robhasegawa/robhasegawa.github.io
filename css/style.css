@@ -3843,7 +3843,7 @@ input, textarea, select, button, legend, input[type="submit"], button
 /* Mian Heading font */
 h1,h2,h3,h4,h5,h6,body.single .title-wrap-tit,.title-wrap-h1, .archive-grid-item-tit,.title-wrap-meta-a,.archive-grid-item-meta-item
 {
-  font-family: 'Work Sans', serif; font-weight: 700; letter-spacing: 0.5px;
+  font-family: 'Work Sans', sans-serif; font-weight: 700; letter-spacing: 0.5px;
 }
 
 /* Text Logo */
@@ -4422,7 +4422,7 @@ blockquote em, blockquote i, blockquote cite {
   .responsive-ux .post_format-post-format-gallery .list-layout-col2-item,
   .responsive-ux .post_format-post-format-gallery .list-layout-col3-item,
   .responsive-ux .post_format-post-format-gallery .list-layout-col4-item,
-  .responsive-ux .post_format-post-format-gallery .gallery-images-img { width: 100%!important; height: auto!important; }
+  .responsive-ux .post_format-post-format-gallery .gallery-images-img { width: 100%!important; height: auto!important;}
   .responsive-ux .gallery-info-property { margin-top: 0;}
   body.single.responsive-ux .title-wrap { margin-bottom: 20px; margin-top: 0; min-height: 20px; font-size: 20px; }
   .responsive-ux .social-bar.center-ux { position: static; display: block!important;
